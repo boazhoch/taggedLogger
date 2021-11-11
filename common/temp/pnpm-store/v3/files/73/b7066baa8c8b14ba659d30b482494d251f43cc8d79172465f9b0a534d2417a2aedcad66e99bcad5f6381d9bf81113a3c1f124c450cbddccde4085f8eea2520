@@ -1,0 +1,21 @@
+{
+  "name": "@statoscope/types",
+  "version": "5.14.1",
+  "description": "Statoscope types",
+  "types": "./types/index.d.ts",
+  "scripts": {},
+  "repository": "https://github.com/statoscope/statoscope/",
+  "author": {
+    "name": "Sergey Melyukov",
+    "url": "https://twitter.com/smelukov"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@statoscope/stats": "5.14.1"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/statoscope/statoscope/",
+  "gitHead": "cd4f79745932c1a951517cc117f78afb3717f1a3"
+}

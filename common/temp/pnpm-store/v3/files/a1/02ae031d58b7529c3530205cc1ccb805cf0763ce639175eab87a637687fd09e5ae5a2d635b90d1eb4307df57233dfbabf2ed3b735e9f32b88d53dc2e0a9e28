@@ -1,0 +1,28 @@
+{
+  "name": "@statoscope/helpers",
+  "version": "5.14.1",
+  "description": "Statoscope utils",
+  "main": "./dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "../../node_modules/.bin/tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": "https://github.com/statoscope/statoscope.git",
+  "author": {
+    "name": "Sergey Melyukov",
+    "url": "https://twitter.com/smelukov"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/statoscope/statoscope/",
+  "dependencies": {
+    "@types/archy": "^0.0.32",
+    "@types/semver": "^7.3.6",
+    "archy": "~1.0.0",
+    "jora": "^1.0.0-beta.5",
+    "semver": "^7.3.5"
+  },
+  "gitHead": "cd4f79745932c1a951517cc117f78afb3717f1a3"
+}
