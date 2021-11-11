@@ -1,3 +1,5 @@
-import taggedLoggerFactory from "./TaggedLoggerFactory/TaggedLoggerFactory";
+import taggedLoggerFactory from './TaggedLoggerFactory/TaggedLoggerFactory';
 
-export { taggedLoggerFactory}
+console.log(taggedLoggerFactory);
+
+export { taggedLoggerFactory };

@@ -391,7 +391,8 @@
   "projects": [
     {
       "packageName": "@logger/tagged",
-      "projectFolder": "libs/logger"
+      "projectFolder": "libs/logger",
+      "shouldPublish": true
     },
     {
       "packageName": "@logger/formatter",
@@ -447,7 +448,7 @@
     //    * the Rush change and publish workflows. The default value is false.
     //    * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
     //    */
-    //   // "shouldPublish": false,
+      // "shouldPublish": false,
     // 
     //   /**
     //    * Facilitates postprocessing of a project's files prior to publishing.
