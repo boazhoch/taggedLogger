@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@atz/tagged",
+      "comment": "Commit",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@atz/tagged"
+}

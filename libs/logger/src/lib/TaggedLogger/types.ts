@@ -1,4 +1,4 @@
-import { ISendMessage } from '@logger/sender';
+import { ISendMessage } from '@atz/sender';
 import { IContextLogger } from '../ContextLogger/types';
 export type ITaggedLogger = {
   debug(strings: TemplateStringsArray, ...values: any[]): void;

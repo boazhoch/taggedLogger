@@ -390,25 +390,29 @@
    */
   "projects": [
     {
-      "packageName": "@logger/tagged",
+      "packageName": "@atz/tagged",
       "projectFolder": "libs/logger",
       "shouldPublish": true
     },
     {
-      "packageName": "@logger/formatter",
-      "projectFolder": "libs/formatter"
+      "packageName": "@atz/formatter",
+      "projectFolder": "libs/formatter",
+      "shouldPublish": true
     },
     {
-      "packageName": "@logger/sender",
-      "projectFolder": "libs/sender"
+      "packageName": "@atz/sender",
+      "projectFolder": "libs/sender",
+      "shouldPublish": true
     },
     {
-      "packageName": "@logger/stringify",
-      "projectFolder": "libs/stringify"
+      "packageName": "@atz/stringify",
+      "projectFolder": "libs/stringify",
+      "shouldPublish": true
     },
     {
-      "packageName": "@logger/worker",
-      "projectFolder": "libs/worker"
+      "packageName": "@atz/worker",
+      "projectFolder": "libs/worker",
+      "shouldPublish": true
     }
     // {
     //   /**

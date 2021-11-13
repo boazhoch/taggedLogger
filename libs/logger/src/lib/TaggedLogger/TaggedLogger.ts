@@ -1,13 +1,20 @@
-import { ITaggedLogger } from "./types";
-import { ILogger } from "../Logger/types";
-import { LogLevel } from "../ContextLogger/types";
-import { ILogFormatter } from "@logger/formatter";
-import { ITemplateString } from "@logger/stringify";
+import { ITaggedLogger } from './types';
+import { ILogger } from '../Logger/types';
+import { LogLevel } from '../ContextLogger/types';
+import { ILogFormatter } from '@atz/formatter';
+import { ITemplateString } from '@atz/stringify';
 
 class TaggedLogger implements ITaggedLogger {
-  constructor(private tpl: ITemplateString, private _logger: ILogger, private logFormatter: ILogFormatter) {}
+  constructor(
+    private tpl: ITemplateString,
+    private _logger: ILogger,
+    private logFormatter: ILogFormatter
+  ) {}
 
-  private getMessage<T extends TemplateStringsArray | string>(strings: T, ...values: any[]) {
+  private getMessage<T extends TemplateStringsArray | string>(
+    strings: T,
+    ...values: any[]
+  ) {
     const message = this.tpl.toString(strings, ...values);
     return this.logFormatter.format(message);
   }

@@ -1,19 +1,22 @@
-import { ISendMessage } from "@logger/sender";
-import { IContextLogger, LogLevel } from "./types";
+import { ISendMessage } from '@atz/sender';
+import { IContextLogger, LogLevel } from './types';
 
 class ContextLogger implements IContextLogger {
   protected consoleMapper = new Map<LogLevel, any>();
 
-  constructor(protected logSender?: ISendMessage, protected logLevel = LogLevel.debug) {
+  constructor(
+    protected logSender?: ISendMessage,
+    protected logLevel = LogLevel.debug
+  ) {
     this.logSender = logSender;
     this.logLevel = logLevel;
 
     for (const logMethod in console) {
-      const logLevel = LogLevel[(logMethod as unknown) as LogLevel];
+      const logLevel = LogLevel[logMethod as unknown as LogLevel];
       const consoleFn = console[logMethod as never];
 
       if (logLevel && consoleFn) {
-        this.consoleMapper.set((logLevel as unknown) as LogLevel, consoleFn);
+        this.consoleMapper.set(logLevel as unknown as LogLevel, consoleFn);
       }
     }
   }

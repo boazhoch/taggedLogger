@@ -1,8 +1,7 @@
-
-import { ILogger } from "./types";
-import ContextLogger from "../ContextLogger/ContextLogger";
-import { LogLevel } from "../ContextLogger/types";
-import { ISendMessage } from "@logger/sender";
+import { ILogger } from './types';
+import ContextLogger from '../ContextLogger/ContextLogger';
+import { LogLevel } from '../ContextLogger/types';
+import { ISendMessage } from '@atz/sender';
 
 // TODO: Think to split this logger into the 2 varaints and extends BaseLogger to sendMessage,
 // BaseLogger, ConsoleLogger exnteds BaseLogger implemnts ILogger and TaggedLogger exnteds BaseLogger implements ILogger
@@ -94,7 +93,7 @@ class Logger extends ContextLogger implements ILogger {
    * @param {...any[]} values
    * @memberof Logger
    */
-   warn(message: string) {
+  warn(message: string) {
     this.invokeLog(LogLevel.warn, message);
   }
 

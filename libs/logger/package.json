@@ -1,5 +1,6 @@
 {
-  "version": "0.1.0",
+  "private": false,
+  "version": "0.1.1-beta",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -30,7 +31,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@logger/tagged",
+  "name": "@atz/tagged",
   "author": "Boaz hoch",
   "module": "dist/tsdx-logger.esm.js",
   "size-limit": [
@@ -52,8 +53,8 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@logger/sender": "~0.1.0",
-    "@logger/formatter": "~0.1.0",
-    "@logger/stringify": "~0.1.0"
+    "@atz/formatter": "~0.1.0",
+    "@atz/sender": "~0.1.0",
+    "@atz/stringify": "~0.1.0"
   }
 }

@@ -1,8 +1,11 @@
-import { expose } from "comlink";
-import { taggedLoggerFactory } from "@logger/tagged";
+import { expose } from 'comlink';
+import { taggedLoggerFactory } from '@atz/tagged';
 
 const logger = taggedLoggerFactory({
-  sendMessageOptions: { headers: { contentType: "application/json" }, urlEndpoint: "/log" },
+  sendMessageOptions: {
+    headers: { contentType: 'application/json' },
+    urlEndpoint: '/log',
+  },
   logFormatterOptions: {
     prefix: () => `prefix`,
     suffix: () => ` Suffix format`,
